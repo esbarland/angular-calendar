@@ -182,6 +182,9 @@
     "*.css",
     "*.scss"
   ],
+  "publishConfig": {
+    "@esbarland:registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     "./date-adapters/date-adapter": {
       "main": "./date-adapters/index.js",
