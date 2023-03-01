@@ -117,4 +117,16 @@ export class CalendarNativeDateFormatter
       weekday: 'long',
     }).format(date);
   }
+
+  /**
+   * The year view title
+   */
+  public yearViewTitle({ date, locale }: DateFormatterParams): string {
+    return new Intl.DateTimeFormat(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+      weekday: 'long',
+    }).format(date);
+  }
 }

@@ -10,11 +10,13 @@ import { CalendarMonthModule } from './month/calendar-month.module';
 import { CalendarWeekModule } from './week/calendar-week.module';
 import { CalendarDayModule } from './day/calendar-day.module';
 import { CalendarUtils } from './common/calendar-utils.provider';
+import { CalendarYearModule } from './year/calendar-year.module';
 
 export * from './common/calendar-common.module';
 export * from './month/calendar-month.module';
 export * from './week/calendar-week.module';
 export * from './day/calendar-day.module';
+export * from './year/calendar-year.module';
 
 /**
  * The main module of this library. Example usage:
@@ -37,12 +39,14 @@ export * from './day/calendar-day.module';
     CalendarMonthModule,
     CalendarWeekModule,
     CalendarDayModule,
+    CalendarYearModule,
   ],
   exports: [
     CalendarCommonModule,
     CalendarMonthModule,
     CalendarWeekModule,
     CalendarDayModule,
+    CalendarYearModule,
   ],
 })
 export class CalendarModule {

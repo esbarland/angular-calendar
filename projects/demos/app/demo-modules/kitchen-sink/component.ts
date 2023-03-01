@@ -59,7 +59,7 @@ const colors: Record<string, EventColor> = {
 export class DemoComponent {
   @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any>;
 
-  view: CalendarView = CalendarView.Month;
+  view: CalendarView = CalendarView.Year;
 
   CalendarView = CalendarView;
 

@@ -23,13 +23,14 @@ import {
   endOfDay,
 } from 'date-fns';
 
-type CalendarPeriod = 'day' | 'week' | 'month';
+type CalendarPeriod = 'day' | 'week' | 'month' | 'year';
 
 function addPeriod(period: CalendarPeriod, date: Date, amount: number): Date {
   return {
     day: addDays,
     week: addWeeks,
     month: addMonths,
+    year: addWeeks,
   }[period](date, amount);
 }
 
@@ -38,6 +39,7 @@ function subPeriod(period: CalendarPeriod, date: Date, amount: number): Date {
     day: subDays,
     week: subWeeks,
     month: subMonths,
+    year: subWeeks,
   }[period](date, amount);
 }
 
@@ -46,6 +48,7 @@ function startOfPeriod(period: CalendarPeriod, date: Date): Date {
     day: startOfDay,
     week: startOfWeek,
     month: startOfMonth,
+    year: startOfWeek,
   }[period](date);
 }
 
@@ -54,6 +57,7 @@ function endOfPeriod(period: CalendarPeriod, date: Date): Date {
     day: endOfDay,
     week: endOfWeek,
     month: endOfMonth,
+    year: endOfWeek,
   }[period](date);
 }
 

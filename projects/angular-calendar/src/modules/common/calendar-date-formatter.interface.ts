@@ -77,4 +77,9 @@ export interface CalendarDateFormatterInterface {
    * The day view title
    */
   dayViewTitle({ date: Date }: DateFormatterParams): string;
+
+  /**
+   * The year view title
+   */
+  yearViewTitle(params: DateFormatterParams): string;
 }

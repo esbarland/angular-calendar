@@ -1,5 +1,5 @@
 {
-  "name": "angular-calendar",
+  "name": "@esbarland/angular-calendar",
   "version": "0.30.1",
   "description": "A calendar component for angular 14.0+ that can display events on a month, week or day view",
   "funding": {
